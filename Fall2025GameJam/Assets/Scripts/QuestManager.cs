@@ -25,27 +25,14 @@ public class QuestManager : MonoBehaviour
 		public string text; 
 		public AudioClip voiceLine; 
 		public int dayTriggered; 
+		
+		public Dialogue(string t, AudioClip x, int d){
+			text = t; 
+			voiceLine = x; 
+			dayTriggered = d;
+		}
+		
 	}    
 }
 
-[System.Serializable]
-public class QuestTNode{
-	public QuestManager.Dialogue currentDialogue;
-	public string playerResponse1; 
-	public string playerResponse2; 
-	public QuestTNode response1Next; 
-	public QuestTNode response2Next; 
-	
-	public QuestTNode next; 
-	
-	public QuestTNode(QuestManager.Dialogue x, string res1, string res2, QuestTNode res1N = null, QuestTNode res2N=null, QuestTNode n = null){
-		this.currentDialogue = x; 
-		this.playerResponse1 = res1;
-		this.playerResponse2 = res2;
-		this.response1Next = res1N;
-		this.response2Next = res2N; 
-		this.next = n; 
-	}
-	
-}
 
