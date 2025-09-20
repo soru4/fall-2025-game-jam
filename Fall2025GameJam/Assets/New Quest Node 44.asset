@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20c3f366d33a7914b982ece66b099f7a, type: 3}
-  m_Name: New Quest Node 27
+  m_Name: New Quest Node 44
   m_EditorClassIdentifier: 
-  name: "That\u2019s what I know about the damn informant."
+  name: How can I help?
   currentDialogue:
-    text: "That\u2019s what I know about the damn informant."
+    text: How can I help?
     voiceLine: {fileID: 0}
     dayTriggered: 0
-  playerResponse1: Who do you think could be giving away your secrets?
-  playerResponse2: Why have you been so loyal to Nexus HVAC?
-  response1Next: {fileID: 11400000, guid: ba1c8d6803f35c142ae6b51636a8b738, type: 2}
-  response2Next: {fileID: 11400000, guid: f34823ed9e73f554ab9d870526dbf224, type: 2}
+  playerResponse1: What do you know about there being an informant in the office?
+  playerResponse2: What have you been up to this past week?
+  response1Next: {fileID: 11400000, guid: 9955777af8b35dd419ba60ca3a5827ff, type: 2}
+  response2Next: {fileID: 11400000, guid: ed85e9f4b362a594ba0d36a4fffc9b95, type: 2}
   next: {fileID: 0}

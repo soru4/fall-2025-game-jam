@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20c3f366d33a7914b982ece66b099f7a, type: 3}
-  m_Name: New Quest Node 22
+  m_Name: New Quest Node 51
   m_EditorClassIdentifier: 
-  name: Working on trying to advertise HVAC to the Amish.
+  name: But the truth is, unfortunately, they always do it better.
   currentDialogue:
-    text: Working on trying to advertise HVAC to the Amish.
+    text: But the truth is, unfortunately, they always do it better.
     voiceLine: {fileID: 0}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 
   response1Next: {fileID: 0}
   response2Next: {fileID: 0}
-  next: {fileID: 11400000, guid: 5a48b160685014c40b8bfeba338ac9fe, type: 2}
+  next: {fileID: 11400000, guid: 38d78eb078903ae41bfed6c44a95a14b, type: 2}

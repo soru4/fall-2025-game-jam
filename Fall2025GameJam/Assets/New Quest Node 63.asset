@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20c3f366d33a7914b982ece66b099f7a, type: 3}
-  m_Name: New Quest Node 22
+  m_Name: New Quest Node 63
   m_EditorClassIdentifier: 
-  name: Working on trying to advertise HVAC to the Amish.
+  name: "And she\u2019s the one who\u2019s in the know about every aspect of the
+    company."
   currentDialogue:
-    text: Working on trying to advertise HVAC to the Amish.
+    text: "And she\u2019s the one who\u2019s in the know about every aspect of the
+      company."
     voiceLine: {fileID: 0}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 
   response1Next: {fileID: 0}
   response2Next: {fileID: 0}
-  next: {fileID: 11400000, guid: 5a48b160685014c40b8bfeba338ac9fe, type: 2}
+  next: {fileID: 11400000, guid: 33d9702588085b6418e38cfe510bdf07, type: 2}
