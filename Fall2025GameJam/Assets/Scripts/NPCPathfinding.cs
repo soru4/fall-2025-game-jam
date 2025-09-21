@@ -3,13 +3,15 @@
 public class NPCPathfinding : MonoBehaviour
 {
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
-	public static System.Collections.Generic.List<PathfindingTile> allPathfindingTiles; 
+	public  System.Collections.Generic.List<PathfindingTile> allPathfindingTiles; 
 	public Vector3 destination;
 	public PathfindingTile movingTowardsTile; 
+	public float speed; 
 	//Finds the closest pathfinding tile. Look at all of the bordering tiles and see which one leads to a closer pos to desired Destination. 
     void Start()	
-    {
-        
+	{
+		foreach(GameObject x in GameObject.FindGameObjectsWithTag("Tile"))
+			allPathfindingTiles.Add(x.GetComponent<PathfindingTile>());
     }
 
     // Update is called once per frame
@@ -21,14 +23,21 @@ public class NPCPathfinding : MonoBehaviour
 	    if(Vector3.Distance(transform.position, movingTowardsTile.transform.position) <= 1f){
 	    	movingTowardsTile = ChooseNextTile();
 	    }
+	    
+	    if(Vector3.Distance(transform.position, destination) <= 4){
+	    	speed = 0; 
+	    	
+	    }
     }
 	public void SetDestination(Vector3 dest){
+		speed = 2; 
 		destination = dest; 
-		float dist = 100000;
+		float dist = 3.5f;
 		PathfindingTile lowestDistTile = null;
 		foreach(PathfindingTile x in allPathfindingTiles){
 			if(Vector3.Distance(transform.position, x.transform.position) <= dist){
 				lowestDistTile = x; 
+				dist = Vector3.Distance(transform.position, x.transform.position);
 			}
 		}
 		movingTowardsTile = lowestDistTile; 

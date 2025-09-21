@@ -6,7 +6,7 @@ public class Hacking : ScriptableObject
 	public int dayTriggered; 
 	
 	public List<Files> files; 
-	
+	[System.Serializable]
 	public struct Files{
 		[SerializeReference] string fileName; 
 		[SerializeReference] string fileContents; 
