@@ -91,7 +91,7 @@ public class DisplayQuestGraph : EditorWindow
 		{
 			ShowAddNodeContextMenu();
 		}
-		if (GUILayout.Button("Create Separate Node"))
+		if (GUILayout.Button("Create Loose Node"))
 		{
 			CreateFreestandingNode();
 		}
