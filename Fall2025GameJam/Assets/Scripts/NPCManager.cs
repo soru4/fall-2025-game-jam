@@ -3,7 +3,10 @@
 public class NPCManager : MonoBehaviour
 {
 	public string name; 
-	public Vector3 cubiclePos; 
+	public Transform cubiclePos;
+	public Transform waterCoolerPos; 
+	public Transform ceoOfficeOutside; 
+	public Transform depart; 
 	public int lunchTime; 
 	public QuestTNode Dialogue; 
 	

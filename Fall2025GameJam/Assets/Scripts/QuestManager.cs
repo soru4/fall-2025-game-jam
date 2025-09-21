@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
-
+using TMPro; 
 public class QuestManager : MonoBehaviour
 {
 	
 	public static QuestManager inst; 
+	
+	public TextMeshProUGUI questText; 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	// Awake is called when the script instance is being loaded.
+	
 	protected void Awake()
 	{
 		inst = this; 
