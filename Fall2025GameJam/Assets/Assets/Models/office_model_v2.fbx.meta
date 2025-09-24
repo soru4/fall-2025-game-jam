@@ -3,7 +3,187 @@ guid: ec27b9d77503bfc48adb07318d97068a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: audio rim
+    second: {fileID: 2100000, guid: 700bc8f7d66ff42a09a1a7b48c3f12d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: audio screen
+    second: {fileID: 2100000, guid: a1e1fa38d6b3b40bca56a3a8d6862ad9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book covers
+    second: {fileID: 2100000, guid: d70bb3b515815438bb3af6627393ed32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book pages
+    second: {fileID: 2100000, guid: a7f641b0e7cda498ab7f4c4d6f9ac32d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boss chair armrest
+    second: {fileID: 2100000, guid: 72cf70ba0384d44e1a7a84104fd2882b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boss chair cushion
+    second: {fileID: 2100000, guid: 2b2d7bfbad52142e78486b4dc637fce6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boss chair legs
+    second: {fileID: 2100000, guid: 71272622fdbed4b2abcd1fa14836a82c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair armrest
+    second: {fileID: 2100000, guid: 573594b1646e54b9991367d18ceed813, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair cushion
+    second: {fileID: 2100000, guid: 230828938ef464feda6f1cd28ad825d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair legs
+    second: {fileID: 2100000, guid: 71272622fdbed4b2abcd1fa14836a82c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: computer frame
+    second: {fileID: 2100000, guid: 20d1898afc3f144adbf439699a75a3ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: computer screen
+    second: {fileID: 2100000, guid: e97cf45e7953444bc95cc5c31c979ce9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cord door
+    second: {fileID: 2100000, guid: d8e77cc3b00da4f199f5d2b27a86e2de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cubicle desk
+    second: {fileID: 2100000, guid: 6b8ccab46b07940d4b0cb534e149670e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cubicle glass
+    second: {fileID: 2100000, guid: 1e36e6b80361d4264ba882e52444fcc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cubicle rim
+    second: {fileID: 2100000, guid: b2733a9f7f9c24960887df895ce71463, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: desk shelves
+    second: {fileID: 2100000, guid: c445aa119a16947ef9ab27ae96c0113f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: electric box
+    second: {fileID: 2100000, guid: 3384962f85fd54f34a5672999036e299, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: electric wires
+    second: {fileID: 2100000, guid: 34886899775ec4964a7e1a8fb239027e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: 1d1ff1d063ca54b4f8e623f26eb19aa0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: folding wall center
+    second: {fileID: 2100000, guid: fee60ba824c3e43d896bc20d3ca172f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: folding wall rim
+    second: {fileID: 2100000, guid: 2229af0e928504ee6839f2ad37c1167d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: c2266d60116944537829629b9e15ffa4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: keyboard keys
+    second: {fileID: 2100000, guid: 091ef7741ceea41388bdc6d2ffbdd4fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: keyboard rim
+    second: {fileID: 2100000, guid: 3d0bad03639a64cf18bf9007383efd65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shelf
+    second: {fileID: 2100000, guid: 75fd4694d361348a8998d8b22f74f36c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shelf handle
+    second: {fileID: 2100000, guid: 393035b0f2382434b827487993b3d9e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: table legs
+    second: {fileID: 2100000, guid: c445aa119a16947ef9ab27ae96c0113f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: table top
+    second: {fileID: 2100000, guid: 75fd4694d361348a8998d8b22f74f36c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trim
+    second: {fileID: 2100000, guid: bfb66a2310a9a4ef2a0a960dece14a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 75aace267ffa9462d83e3610a44bece5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: water cooler
+    second: {fileID: 2100000, guid: 00c1831d0cd0c48bcbe60d80a9c43eec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: water jug
+    second: {fileID: 2100000, guid: ee0a1b4a0fda540afb16faa20fb35d4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whiteboard center
+    second: {fileID: 2100000, guid: 172f7b92fa2d94ba494ea5e92dda483f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whiteboard rim
+    second: {fileID: 2100000, guid: 87cadd352966e43348487b00c22679b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window frame
+    second: {fileID: 2100000, guid: 2327dc298c2f04ba686a7fcf169ea7e0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
