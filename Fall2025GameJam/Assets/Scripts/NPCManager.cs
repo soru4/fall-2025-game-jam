@@ -8,21 +8,30 @@ public class NPCManager : MonoBehaviour
 	public Transform ceoOfficeOutside; 
 	public Transform depart; 
 	public int lunchTime; 
+	public int departTime; 
+	public int enterTime; 
 	public QuestTNode Dialogue; 
 	
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 	    lunchTime = (int)Random.Range(12,14); 
+	    departTime = (int) Random.Range(16, 18);
+	    enterTime = (int)Random.Range(8,10);
 	    //  GetComponent<NPCPathfinding>().SetDestination(ceoOfficeOutside.transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-	    
+	    TimeCheck();
     }
     
+	public void TimeCheck(){
+		
+		
+		
+	}
     
 	public void SetUpDialogue(){
 	
