@@ -7,13 +7,14 @@ public class QuestManager : MonoBehaviour
 	public static QuestManager inst; 
 	public bool inInterrogation; 
 	public bool listeningIn; 
+	public GameObject dialogueBox;
+	public GameObject interogationBox;
+	public GameObject hackingBox;
 	public QuestTNode currQuestTNode; 
 	public ListeningIn currListeningIn; 
-	public UnityEngine.UI.Button continueForward; 	public TextMeshProUGUI charSpeaking; 
+		public TextMeshProUGUI charSpeaking; 
 	public TextMeshProUGUI questText; 
 	
-	public UnityEngine.UI.Button response1; 
-	public UnityEngine.UI.Button response2;
 	
 	public TextMeshProUGUI response1Text; 
 	public TextMeshProUGUI response2Text; 
