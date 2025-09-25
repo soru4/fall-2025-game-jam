@@ -29,14 +29,23 @@ public class GameManager : MonoBehaviour
 	{
 		dayNumber.text = "Day: " +day;
 		dayName.text = day == 0 ? "Monday" : day == 1 ? "Tuesday" : day == 2? "Wednesday" : day == 3 ? "Thursday" : day == 4 ? "Friday" : "null";
-		actionsToday = actionsPerDay[day];
-		actionsLeft.text = actionsToday + " Actions Left";
 		
-	    CheckHour();
+		actionsLeft.text = actionsToday + " Actions Left";
+		if(actionsToday < (actionsPerDay[day]/2) + 1){
+			foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
+				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().depart.transform.position);
+			}
+		}
+		if(actionsToday <=0)
+	    	CheckHour();
     }
 	void CheckHour(){
-		day += hour > 24 ? 1 : 0;  
-		hour = hour > 24 ? 0 : hour; 
+		day += 1;
+		actionsToday = actionsPerDay[day];
+		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
+			x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().cubiclePos.transform.position);
+		}
+		
 		
 	}
 	//Syntax in questTNode: 0.3 (percentage of day to elapse) : 0.1 (decimal percentage of tiredness to increase)
