@@ -4,8 +4,8 @@ public class GameManager : MonoBehaviour
 {
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	public static GameManager inst; 
-	public int day = 0; // 0, 1, 2, 3, 4, 5. 
-	public int hour = 0; // 0 - 24
+	int day = 0; // 0, 1, 2, 3, 4, 5. 
+	int hour = 0; // 0 - 24
 	
 
 	public QuestTNode currentTNode; 
