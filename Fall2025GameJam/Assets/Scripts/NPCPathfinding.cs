@@ -17,21 +17,24 @@ public class NPCPathfinding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-		
+	    transform.rotation = Quaternion.LookRotation(movingTowardsTile.transform.position);
+	    movingTowardsTile.transform.position = new Vector3(movingTowardsTile.transform.position.x, transform.position.y, movingTowardsTile.transform.position.z); 
 	    transform.position = Vector3.MoveTowards(transform.position, movingTowardsTile.transform.position, 2*Time.deltaTime);
-	    if(Vector3.Distance(transform.position, movingTowardsTile.transform.position) <= 1f){
-	    	movingTowardsTile = ChooseNextTile();
-	    }
-	    
-	    if(Vector3.Distance(transform.position, destination) <= 4){
+	    if(Vector3.Distance(transform.position, destination) <= 3){
 	    	speed = 0; 
 	    	
 	    }
+	    else if(Vector3.Distance(transform.position, movingTowardsTile.transform.position) <= 1f){
+	    	movingTowardsTile = ChooseNextTile();
+	    }
+	    
+	   
     }
 	public void SetDestination(Vector3 dest){
 		speed = 2; 
+		
 		destination = dest; 
+		destination.y = transform.position.y; 
 		float dist = 3.5f;
 		PathfindingTile lowestDistTile = null;
 		foreach(PathfindingTile x in allPathfindingTiles){
@@ -41,6 +44,7 @@ public class NPCPathfinding : MonoBehaviour
 			}
 		}
 		movingTowardsTile = lowestDistTile; 
+	
 	}
 	public PathfindingTile ChooseNextTile()
 	{
@@ -63,7 +67,7 @@ public class NPCPathfinding : MonoBehaviour
 				}
 			}
 		}
-
+		
 		return closestTile;
 	}
 	

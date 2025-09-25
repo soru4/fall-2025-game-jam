@@ -14,7 +14,7 @@ public class NPCManager : MonoBehaviour
     void Start()
     {
 	    lunchTime = (int)Random.Range(12,14); 
-	    //  GetComponent<NPCPathfinding>().SetDestination(ceoOfficeOutside.transform.position);
+	     GetComponent<NPCPathfinding>().SetDestination(ceoOfficeOutside.transform.position);
     }
 
     // Update is called once per frame
