@@ -32,7 +32,19 @@ public class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+	    if(Input.GetKeyDown(KeyCode.Escape)){
+	    	//menu
+	    }else if(Input.GetKeyDown(KeyCode.Alpha1)){
+	    	//menu
+	    	print("1");
+	    }else if(Input.GetKeyDown(KeyCode.Alpha2)){
+	    	//menu
+	    	print("2");
+	    }
+	    else if(Input.GetKeyDown(KeyCode.Alpha3)){
+	    	//menu
+	    	print("3");
+	    }
     }
     
 	public void startQuest(){

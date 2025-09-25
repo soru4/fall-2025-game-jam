@@ -23,17 +23,21 @@ public class NPCPathfinding : MonoBehaviour
 	    Vector3 currentPosition = transform.position;
 	    Vector3 movementDirection = (currentPosition - previousPosition).normalized;
 	    previousPosition = currentPosition; // Update for the next frame
-	    
-	    movingTowardsTile.transform.position = new Vector3(movingTowardsTile.transform.position.x, transform.position.y, movingTowardsTile.transform.position.z);
-	    transform.position = Vector3.MoveTowards(transform.position, movingTowardsTile.transform.position, speed*Time.deltaTime);
-	    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movementDirection), 0.1f);
-	    if(Vector3.Distance(transform.position, destination) <= 4 && Vector3.Distance(transform.position, destination) > 0.3f){
-		    transform.position = Vector3.MoveTowards(transform.position, destination, 2*Time.deltaTime);
+	    if(destination != Vector3.zero){
+		    movingTowardsTile.transform.position = new Vector3(movingTowardsTile.transform.position.x, transform.position.y, movingTowardsTile.transform.position.z);
+		    transform.position = Vector3.MoveTowards(transform.position, movingTowardsTile.transform.position, speed*Time.deltaTime);
+		    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movementDirection), 0.1f);
+	   
+	    }
+	    if(Vector3.Distance(transform.position, destination) <= 2f ){
+		    destination = new Vector3(destination.x, transform.position.y, destination.z);
+		    transform.position = destination;
 		    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movementDirection), 0.1f);
 	    	speed = 0; 
+	    	destination = Vector3.zero; 
 	    	
 	    }
-	    else if(Vector3.Distance(transform.position, movingTowardsTile.transform.position) <= 1f){
+	    else if(movingTowardsTile != null &&Vector3.Distance(transform.position, movingTowardsTile.transform.position) <= 0.01f){
 	    	movingTowardsTile = ChooseNextTile();
 	    }
 	    

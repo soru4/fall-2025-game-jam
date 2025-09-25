@@ -14,8 +14,9 @@ public class NPCManager : MonoBehaviour
     void Start()
     {
 	    lunchTime = (int)Random.Range(12,14); 
-	    
-	     GetComponent<NPCPathfinding>().SetDestination(ceoOfficeOutside.transform.position);
+	    cubiclePos.transform.position = new Vector3(cubiclePos.transform.position.x, transform.position.y, cubiclePos.transform.position.z);
+	    transform.position = cubiclePos.transform.position;
+	    //GetComponent<NPCPathfinding>().SetDestination(cubiclePos.transform.position);
     }
 
     // Update is called once per frame
