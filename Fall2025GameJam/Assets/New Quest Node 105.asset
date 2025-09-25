@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c3f366d33a7914b982ece66b099f7a, type: 3}
+  m_Name: New Quest Node 105
+  m_EditorClassIdentifier: 
+  name: "<i>Takes a seat with his hands on the table</i> \u201CHow can I help?\u201D
+    <i>Takes a seat with his hands on the table</i> \u201CHow can I help?\u201D "
+  currentDialogue:
+    text: "<i>Takes a seat with his hands on the table</i> \u201CHow can I help?\u201D "
+    voiceLine: {fileID: 0}
+    dayTriggered: 0
+  playerResponse1: "\u201CIf you had to say, who do you think is worth looking into?\u201D "
+  playerResponse2: "\u201CHave you heard of Wennix expanding?\u201D "
+  response1Next: {fileID: 11400000, guid: 8bcc16c744c2fe8419e3d70984b832ab, type: 2}
+  response2Next: {fileID: 11400000, guid: d0302b228a5ea5f409fcd802e045129d, type: 2}
+  next: {fileID: 0}

@@ -7,20 +7,29 @@ public class NPCPathfinding : MonoBehaviour
 	public Vector3 destination;
 	public PathfindingTile movingTowardsTile; 
 	public float speed; 
+	public Vector3 previousPosition; 
 	//Finds the closest pathfinding tile. Look at all of the bordering tiles and see which one leads to a closer pos to desired Destination. 
     void Start()	
 	{
+		previousPosition = transform.position; 
 		foreach(GameObject x in GameObject.FindGameObjectsWithTag("Tile"))
 			allPathfindingTiles.Add(x.GetComponent<PathfindingTile>());
+		
     }
 
     // Update is called once per frame
     void Update()
     {
-	    transform.rotation = Quaternion.LookRotation(movingTowardsTile.transform.position);
-	    movingTowardsTile.transform.position = new Vector3(movingTowardsTile.transform.position.x, transform.position.y, movingTowardsTile.transform.position.z); 
-	    transform.position = Vector3.MoveTowards(transform.position, movingTowardsTile.transform.position, 2*Time.deltaTime);
-	    if(Vector3.Distance(transform.position, destination) <= 3){
+	    Vector3 currentPosition = transform.position;
+	    Vector3 movementDirection = (currentPosition - previousPosition).normalized;
+	    previousPosition = currentPosition; // Update for the next frame
+	    
+	    movingTowardsTile.transform.position = new Vector3(movingTowardsTile.transform.position.x, transform.position.y, movingTowardsTile.transform.position.z);
+	    transform.position = Vector3.MoveTowards(transform.position, movingTowardsTile.transform.position, speed*Time.deltaTime);
+	    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movementDirection), 0.1f);
+	    if(Vector3.Distance(transform.position, destination) <= 4 && Vector3.Distance(transform.position, destination) > 0.3f){
+		    transform.position = Vector3.MoveTowards(transform.position, destination, 2*Time.deltaTime);
+		    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movementDirection), 0.1f);
 	    	speed = 0; 
 	    	
 	    }
@@ -28,14 +37,12 @@ public class NPCPathfinding : MonoBehaviour
 	    	movingTowardsTile = ChooseNextTile();
 	    }
 	    
-	   
+	    
     }
 	public void SetDestination(Vector3 dest){
 		speed = 2; 
-		
 		destination = dest; 
-		destination.y = transform.position.y; 
-		float dist = 3.5f;
+		float dist = 7f;
 		PathfindingTile lowestDistTile = null;
 		foreach(PathfindingTile x in allPathfindingTiles){
 			if(Vector3.Distance(transform.position, x.transform.position) <= dist){
@@ -44,7 +51,6 @@ public class NPCPathfinding : MonoBehaviour
 			}
 		}
 		movingTowardsTile = lowestDistTile; 
-	
 	}
 	public PathfindingTile ChooseNextTile()
 	{
@@ -67,7 +73,7 @@ public class NPCPathfinding : MonoBehaviour
 				}
 			}
 		}
-		
+
 		return closestTile;
 	}
 	

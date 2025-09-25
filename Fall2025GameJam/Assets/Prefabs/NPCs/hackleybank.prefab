@@ -75,5 +75,51 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e4f332fe6376251409e253e751325771, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6758004325895131828}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e4f332fe6376251409e253e751325771, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7665276000710687076}
   m_SourcePrefab: {fileID: 100100000, guid: e4f332fe6376251409e253e751325771, type: 3}
+--- !u!1 &2402346993653171157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e4f332fe6376251409e253e751325771, type: 3}
+  m_PrefabInstance: {fileID: 3285288023807360644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6758004325895131828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2402346993653171157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fddae3314ddc4043862d3dcaaff8784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Hackley Banks
+  cubiclePos: {fileID: 6786874885194164524, guid: 8ebc70badeff9b34a85248e66a403aef, type: 3}
+  waterCoolerPos: {fileID: 475271250100417058, guid: 26d2326320615c34e8d7f246d716f483, type: 3}
+  ceoOfficeOutside: {fileID: 3910857924164960014, guid: ff134b39e5a79f7458a45dee57118ccf, type: 3}
+  depart: {fileID: 1281233270049613951, guid: 1b04901e68b33ee4e8c036de90ccc6e6, type: 3}
+  lunchTime: 0
+  Dialogue: {fileID: 0}
+--- !u!114 &7665276000710687076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2402346993653171157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ca50f084460ac4c88b6a00834975fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allPathfindingTiles: []
+  destination: {x: 0, y: 0, z: 0}
+  movingTowardsTile: {fileID: 0}
+  speed: 0

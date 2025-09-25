@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c3f366d33a7914b982ece66b099f7a, type: 3}
+  m_Name: New Quest Node 374
+  m_EditorClassIdentifier: 
+  name: "\u201CHi, you called for me?\u201D  "
+  currentDialogue:
+    text: "\u201CHi, you called for me?\u201D  "
+    voiceLine: {fileID: 0}
+    dayTriggered: 0
+  playerResponse1: "\u201CYour name has come up a lot over the past week. Why should
+    I believe you\u2019re innocent?\u201D "
+  playerResponse2: "\u201CIf Nexus were to dissolve, what\u2019s your plan?\u201D "
+  response1Next: {fileID: 11400000, guid: d819d0633098164458c6e55c900630c9, type: 2}
+  response2Next: {fileID: 11400000, guid: e58121ef54e6f934ca8101975f3a12ac, type: 2}
+  next: {fileID: 0}

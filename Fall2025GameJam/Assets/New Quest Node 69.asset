@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c3f366d33a7914b982ece66b099f7a, type: 3}
+  m_Name: New Quest Node 69
+  m_EditorClassIdentifier: 
+  name: "\u201CI\u2019m scrambling around the office trying to check in with everyone,
+    sending emails to our clients, on calls with our investors, scheduling meetings\u2026\u201D "
+  currentDialogue:
+    text: "\u201CI\u2019m scrambling around the office trying to check in with everyone,
+      sending emails to our clients, on calls with our investors, scheduling meetings\u2026\u201D "
+    voiceLine: {fileID: 0}
+    dayTriggered: 0
+  playerResponse1: 
+  playerResponse2: 
+  response1Next: {fileID: 0}
+  response2Next: {fileID: 0}
+  next: {fileID: 11400000, guid: b497e639039a655489d92a1078566dd0, type: 2}

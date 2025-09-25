@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c3f366d33a7914b982ece66b099f7a, type: 3}
+  m_Name: New Quest Node 222
+  m_EditorClassIdentifier: 
+  name: "\u201CThere is going to be an office meeting tomorrow, and I\u2019ll be
+    sure to address it.\u201D <He says with a look of disdain> "
+  currentDialogue:
+    text: "\u201CThere is going to be an office meeting tomorrow, and I\u2019ll be
+      sure to address it.\u201D <He says with a look of disdain> "
+    voiceLine: {fileID: 0}
+    dayTriggered: 0
+  playerResponse1: 
+  playerResponse2: 
+  response1Next: {fileID: 0}
+  response2Next: {fileID: 0}
+  next: {fileID: 11400000, guid: 305480e623aab18429a70290854eb8d5, type: 2}

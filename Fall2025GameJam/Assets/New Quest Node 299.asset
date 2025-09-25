@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c3f366d33a7914b982ece66b099f7a, type: 3}
+  m_Name: New Quest Node 299
+  m_EditorClassIdentifier: 
+  name: "\u201CWhat would you like me to answer?\u201D  "
+  currentDialogue:
+    text: "\u201CWhat would you like me to answer?\u201D  "
+    voiceLine: {fileID: 0}
+    dayTriggered: 0
+  playerResponse1: "\u201CWhat are your thoughts about the meeting this morning?\u201D "
+  playerResponse2: "\u201CWhat do you think an imposter would gain from secretly
+    working with Wennix?\u201D "
+  response1Next: {fileID: 11400000, guid: 3fd923876fb3bfb4a9c05ffeea336c04, type: 2}
+  response2Next: {fileID: 11400000, guid: 8f5ecd4bd35f9484f8a00f019d8b9063, type: 2}
+  next: {fileID: 0}

@@ -75,5 +75,51 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8db7107dab8ea2e44aca20e80f13e8bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1166599708308830436}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8db7107dab8ea2e44aca20e80f13e8bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4724694606193679053}
   m_SourcePrefab: {fileID: 100100000, guid: 8db7107dab8ea2e44aca20e80f13e8bf, type: 3}
+--- !u!1 &7049158793026899515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8db7107dab8ea2e44aca20e80f13e8bf, type: 3}
+  m_PrefabInstance: {fileID: 7859569987826856810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1166599708308830436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7049158793026899515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fddae3314ddc4043862d3dcaaff8784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sue Docket
+  cubiclePos: {fileID: 4950012470569934902, guid: 3aa8d85659ff9c045b342dc903e3d08a, type: 3}
+  waterCoolerPos: {fileID: 475271250100417058, guid: 26d2326320615c34e8d7f246d716f483, type: 3}
+  ceoOfficeOutside: {fileID: 3910857924164960014, guid: ff134b39e5a79f7458a45dee57118ccf, type: 3}
+  depart: {fileID: 1281233270049613951, guid: 1b04901e68b33ee4e8c036de90ccc6e6, type: 3}
+  lunchTime: 0
+  Dialogue: {fileID: 0}
+--- !u!114 &4724694606193679053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7049158793026899515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ca50f084460ac4c88b6a00834975fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allPathfindingTiles: []
+  destination: {x: 0, y: 0, z: 0}
+  movingTowardsTile: {fileID: 0}
+  speed: 0
