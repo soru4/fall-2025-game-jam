@@ -39,7 +39,10 @@ public class QuestManager : MonoBehaviour
 	
 	public GameObject cutScene; 
 	public GameObject gameTitle;
-
+	public GameObject listeningIn1; 
+	public GameObject listeningIn2; 
+	
+	public AudioSource blah; 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	// Awake is called when the script instance is being loaded.
 	
@@ -57,6 +60,12 @@ public class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
 	{
+		if(Time.time < 33 && Input.GetKey(KeyCode.Backspace)){
+			cutScene.SetActive(false); 
+			gameTitle.SetActive(true);
+			Time.timeScale = 20; 
+		}
+		
 		if(Time.time >=33 && Time.time < 40){
 			cutScene.SetActive(false); 
 			gameTitle.SetActive(true);
@@ -64,6 +73,7 @@ public class QuestManager : MonoBehaviour
 		}
 		else if(Time.time > 41 && Time.time < 42){
 			gameTitle.SetActive(false);
+			Time.timeScale = 1; 
 		}
 		else{
 		
@@ -110,16 +120,21 @@ public class QuestManager : MonoBehaviour
 		}
 		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
 			if(x.GetComponent<NPCManager>().name == currListeningIn.list[currListeninginProgress].person){
-				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
-				x.transform.position = x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position;
+				Vector3 temp = Random.insideUnitSphere*2; 
+				Vector3 t1 = new Vector3(temp.x, 0, temp.z); 
+				listeningIn2 = x; 
+				x.transform.position = x.GetComponent<NPCManager>().waterCoolerPos.transform.position + t1;
 			}
 		}
 		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
 			if(x.GetComponent<NPCManager>().name == currListeningIn.list[currListeninginProgress+1].person){
-				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
-				x.transform.position = x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position;
+				Vector3 temp = Random.insideUnitSphere*2; 
+				Vector3 t1 = new Vector3(temp.x, 0, temp.z); 
+				listeningIn1 = x; 
+				x.transform.position = x.GetComponent<NPCManager>().waterCoolerPos.transform.position + t1;
 			}
 		}
+		
 		
 		if(currListeninginProgress <= currListeningIn.list.Count){
 			dialogueBox.SetActive(true);
@@ -141,6 +156,8 @@ public class QuestManager : MonoBehaviour
 			currListeninginProgress = 0; 
 			dialogueBox.SetActive(false);
 			Camera.main.transform.position = defaultCamPos; 
+			listeningIn1.transform.position = listeningIn1.GetComponent<NPCManager>().cubiclePos.transform.transform.position;
+			listeningIn2.transform.position = listeningIn2.GetComponent<NPCManager>().cubiclePos.transform.position;
 		}
 	}
 	public void startHacking(string person){
@@ -194,7 +211,6 @@ public class QuestManager : MonoBehaviour
 		
 		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
 			if(x.GetComponent<NPCManager>().name == person){
-				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
 				x.transform.position = x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position;
 			}
 		}
@@ -202,6 +218,7 @@ public class QuestManager : MonoBehaviour
 		if(currQuestTNode != null){
 			dialogueBox.SetActive(true); 
 			charSpeaking.text = person;
+			blah.PlayOneShot(currQuestTNode.currentDialogue.voiceLine);
 			setUpDialogueLayout();
 				
 		}
@@ -232,6 +249,9 @@ public class QuestManager : MonoBehaviour
 		if(currQuestTNode.next == null && currQuestTNode.response1Next == null && currQuestTNode.response2Next == null){
 			dialogueBox.SetActive(false);
 			Camera.main.transform.position = defaultCamPos; 
+			foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
+				x.transform.position = x.GetComponent<NPCManager>().cubiclePos.transform.position;
+			}
 		}
 	}
 	public void nextQuestClick(bool response){
