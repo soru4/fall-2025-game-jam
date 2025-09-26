@@ -62,7 +62,7 @@ public class QuestManager : MonoBehaviour
 			gameTitle.SetActive(true);
 			
 		}
-		else if(Time.time > 41){
+		else if(Time.time > 41 && Time.time < 42){
 			gameTitle.SetActive(false);
 		}
 		else{
