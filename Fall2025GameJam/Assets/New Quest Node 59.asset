@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "\u201CWhat have I not been doing?\u201D <i> She sighs, listing off things
       off the top of her head, rambling. </i> "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 6c7c46fb797c7c84d830d46983580c9a, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

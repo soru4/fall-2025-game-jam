@@ -15,7 +15,7 @@ MonoBehaviour:
   name: "<i>Sighs</i> \u201CDamn, I don\u2019t even know.\u201D "
   currentDialogue:
     text: "<i>Sighs</i> \u201CDamn, I don\u2019t even know.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 59114a8a88752eb40a4267d12bac6881, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

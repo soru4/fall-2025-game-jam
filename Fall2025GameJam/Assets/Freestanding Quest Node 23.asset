@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Sue Docket - Day 4
   currentDialogue:
     text: '<i>She zooms inside and takes a seat</i>  '
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 6c7c46fb797c7c84d830d46983580c9a, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

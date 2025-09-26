@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i> He scratches his chin </i> \u201CIf I had to point fingers, I\u2019d
       say Sue.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 38f7797a4a32c4a4b9d3866bd93a2fba, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Hackley Banks - Day 4
   currentDialogue:
     text: '<i>Walks into your office, still wearing his usual smile</i> '
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: c005949dd7db8c14e96fb1a098030805, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

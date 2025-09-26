@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "\u201CDespite the current chaos the company is in, he has still managed
       to convince me that we will be ok.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 3f8e7211ab32ce24399e1270ea86f8ea, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "\u201COh jeez, where do I begin?\u201D <i> He chuckles, cracking his knuckles
       </i>"
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 204667b43a1fcb143882c4c4ca9b9834, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

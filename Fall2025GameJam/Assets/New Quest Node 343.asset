@@ -15,7 +15,7 @@ MonoBehaviour:
   name: " <i>He smirks</i> \u201CBecause Sue is the rat, that\u2019s why!\u201D "
   currentDialogue:
     text: " <i>He smirks</i> \u201CBecause Sue is the rat, that\u2019s why!\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: c005949dd7db8c14e96fb1a098030805, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i>Sighs and shakes his head</i> \u201CIt\u2019s hard to believe that
       anyone is trying to sabotage the company.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 256da1b4744379f4dbae54d87325ac66, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

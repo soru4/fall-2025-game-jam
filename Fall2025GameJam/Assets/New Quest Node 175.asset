@@ -15,7 +15,7 @@ MonoBehaviour:
   name: "<i>Leans forward in with a smile</i> \u201CI think Sue and Max are dating.\u201D "
   currentDialogue:
     text: "<i>Leans forward in with a smile</i> \u201CI think Sue and Max are dating.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: c005949dd7db8c14e96fb1a098030805, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

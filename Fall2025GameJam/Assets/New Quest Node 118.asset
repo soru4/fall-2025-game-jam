@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i> he looks off into the distance thinking </i> \u201CWell, for 4 weeks
       we\u2019ve had a lot of clients dropping us as their go-to HVAC company.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: ac0b710bbf05a0645aaa3e36659effa0, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

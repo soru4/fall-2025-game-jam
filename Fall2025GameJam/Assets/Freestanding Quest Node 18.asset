@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Grant Checkman - Day 4
   currentDialogue:
     text: '<i>He walks in with a solemn look on his face.</i>  '
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 204667b43a1fcb143882c4c4ca9b9834, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

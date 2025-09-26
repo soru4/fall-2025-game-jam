@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i> He raises an eyebrow and then looks away, thinking </i> \u201CYou
       know, I don\u2019t think there actually is an 'informant' in the office.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: c005949dd7db8c14e96fb1a098030805, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

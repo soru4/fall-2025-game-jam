@@ -15,7 +15,7 @@ MonoBehaviour:
   name: "\u201CHmmm\u2026\u201D  <i>she taps her fingertips together</i>  "
   currentDialogue:
     text: "\u201CHmmm\u2026\u201D  <i>she taps her fingertips together</i>  "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 3fbc5369bc421d44ca0a9f34322c299d, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

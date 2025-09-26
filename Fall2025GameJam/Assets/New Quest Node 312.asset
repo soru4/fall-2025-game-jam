@@ -15,7 +15,7 @@ MonoBehaviour:
   name: '<i>He wipes a bead of sweat off his forehead</i> '
   currentDialogue:
     text: '<i>He wipes a bead of sweat off his forehead</i> '
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 256da1b4744379f4dbae54d87325ac66, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

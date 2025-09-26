@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i> He leans back, scratching his chin, thinking </i> \u201COh man, I\u2019m
       not sure.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: ac0b710bbf05a0645aaa3e36659effa0, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

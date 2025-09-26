@@ -17,7 +17,7 @@ MonoBehaviour:
     text: "<i> she knocks and then quickly pushes the door open, walking into the
       room, holding a few files in her hands and checking a watch </i> \u201CHello,
       good morning, or is it afternoon?\u201D"
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 3fbc5369bc421d44ca0a9f34322c299d, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

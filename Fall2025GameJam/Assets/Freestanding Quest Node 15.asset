@@ -16,7 +16,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i> He knocks and then opens the door, walking in </i> \u201CHi, how are
       you?\u201D <i> He shakes your hand and then sits down </i> "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: ac0b710bbf05a0645aaa3e36659effa0, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i>He raises an eyebrow</i> \u201CWhy, I don\u2019t know if I should answer
       such a question.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 82b905a509cd83240b2fb49ab580ff99, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

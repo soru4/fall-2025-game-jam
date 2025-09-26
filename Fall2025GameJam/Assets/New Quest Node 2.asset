@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i>He tilts his head slightly</i> \u201CWell, I\u2019m pretty new here,
       so I\u2019ve just been learning a lot from Hackley.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 3f8e7211ab32ce24399e1270ea86f8ea, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

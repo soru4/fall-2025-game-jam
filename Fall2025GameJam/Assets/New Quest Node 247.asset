@@ -15,7 +15,7 @@ MonoBehaviour:
   name: '<i>Takes a moment to think</i> '
   currentDialogue:
     text: '<i>Takes a moment to think</i> '
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 87d3bfa10d8b9e44bb2c963c222c5862, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

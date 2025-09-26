@@ -15,7 +15,7 @@ MonoBehaviour:
   name: "\u201CThe boss, of course.\u201D <i>He says with a childish grin</i>  "
   currentDialogue:
     text: "\u201CThe boss, of course.\u201D <i>He says with a childish grin</i>  "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: c005949dd7db8c14e96fb1a098030805, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

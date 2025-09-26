@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i> He sighs </i> \u201CWell, I got a beautiful wife and 2 kids to worry
       bout. I would probably just find another job somewhere.\u201D"
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 82b905a509cd83240b2fb49ab580ff99, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i>Gives you a serious look</i> \u201CI believe the rat gave Wennix our
       list of clients, so I think it\u2019s someone on the IT side.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 3fbc5369bc421d44ca0a9f34322c299d, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

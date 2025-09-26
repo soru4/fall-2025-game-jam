@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Hackley Banks - Day 2
   currentDialogue:
     text: "<i>Hackley walks in with a smile</i> \u201CHey, detective!\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: c005949dd7db8c14e96fb1a098030805, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

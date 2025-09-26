@@ -16,7 +16,7 @@ MonoBehaviour:
   currentDialogue:
     text: "\u201CHow are you doing today, detective?\u201D <i>he walks in with some
       pep in his step</i> "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 38f7797a4a32c4a4b9d3866bd93a2fba, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

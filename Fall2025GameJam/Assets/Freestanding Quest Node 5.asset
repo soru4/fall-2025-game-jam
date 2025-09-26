@@ -16,7 +16,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i>Swings the door open, walking in</i> \u201CHey, you called for me?\u201D
       <i>He sits down in his chair, crossing his large arms across his chest.</i>"
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 87d3bfa10d8b9e44bb2c963c222c5862, type: 3}
     dayTriggered: 0
   playerResponse1: "\u201CWhat do you know about the rumor of there being a mole
     in the company?\u201D "

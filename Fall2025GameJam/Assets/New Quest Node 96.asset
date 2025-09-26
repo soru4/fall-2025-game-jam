@@ -17,7 +17,7 @@ MonoBehaviour:
   currentDialogue:
     text: "<i> He looks at you as if you are crazy </i> \u201CI\u2019ve worked my
       way up this company from the bottom.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 87d3bfa10d8b9e44bb2c963c222c5862, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

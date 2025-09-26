@@ -16,7 +16,7 @@ MonoBehaviour:
   currentDialogue:
     text: "\u201CI was just about to finish my work.\u201D <i>He loudly exclaims
       while opening the door</i>  "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 87d3bfa10d8b9e44bb2c963c222c5862, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

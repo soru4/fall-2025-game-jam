@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Blake Binder - Day 4
   currentDialogue:
     text: '<i>He enters without his usual smile</i> '
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: e6f8838a3578b444d83a916051f32d78, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

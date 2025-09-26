@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Blake Binder - Day 2
   currentDialogue:
     text: "\u201CHowdy, partner.\u201D <i>He enters and takes a seat</i>   "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 82b905a509cd83240b2fb49ab580ff99, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

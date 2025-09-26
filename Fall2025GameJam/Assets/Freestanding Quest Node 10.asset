@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Hackley Banks - Day 1
   currentDialogue:
     text: "<i> He walks in with a confident stride </i> \u201CHey, how are ya, detective?!\u201D"
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 38f7797a4a32c4a4b9d3866bd93a2fba, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Grant Checkman - Day 2
   currentDialogue:
     text: "<i>Softly open the door</i> \u201CHey, it\u2019s nice to see you.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 204667b43a1fcb143882c4c4ca9b9834, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

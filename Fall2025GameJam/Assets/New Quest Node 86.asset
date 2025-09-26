@@ -15,7 +15,7 @@ MonoBehaviour:
   name: "\u201CI actually had to try really hard to get this job.\u201D "
   currentDialogue:
     text: "\u201CI actually had to try really hard to get this job.\u201D "
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: 3f8e7211ab32ce24399e1270ea86f8ea, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 

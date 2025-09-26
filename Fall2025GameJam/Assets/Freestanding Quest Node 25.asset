@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Blake Binder - Day 1
   currentDialogue:
     text: "\u201CHeya, you called for me?\u201D <i>Sits down on the chair, pulling</i>"
-    voiceLine: {fileID: 0}
+    voiceLine: {fileID: 8300000, guid: e6f8838a3578b444d83a916051f32d78, type: 3}
     dayTriggered: 0
   playerResponse1: 
   playerResponse2: 
