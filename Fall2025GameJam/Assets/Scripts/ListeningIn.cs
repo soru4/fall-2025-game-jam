@@ -17,6 +17,6 @@ public class ListeningIn : ScriptableObject
 
 [System.Serializable]
 	public class Dialogues{
-		[SerializeReference]string person; 
-		[SerializeReference]string text; 
+		public string person; 
+		public string text; 
 	}

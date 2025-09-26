@@ -6,6 +6,10 @@ public class QuestManager : MonoBehaviour
 {
 	
 	public static QuestManager inst; 
+	
+	public Vector3 defaultCamPos;
+	public Vector3 waterCoolerCamPos;
+	public Vector3 interogationCamPos; 
 	public bool inInterrogation; 
 	public bool listeningIn; 
 	public Hacking currentHacking; 
@@ -30,6 +34,9 @@ public class QuestManager : MonoBehaviour
 	public TextMeshProUGUI nameHacking; 
 	public TextMeshProUGUI fileDetailHacking; 
 	
+	public List<ListeningIn> listeningIns; 
+	public int currListeninginProgress; 
+
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	// Awake is called when the script instance is being loaded.
 	
@@ -39,7 +46,8 @@ public class QuestManager : MonoBehaviour
 	}
     void Start()
     {
-        
+	    defaultCamPos = new Vector3(0f,32.5f,31f);
+	    Camera.main.transform.position = defaultCamPos; 
     }
 
     // Update is called once per frame
@@ -47,24 +55,79 @@ public class QuestManager : MonoBehaviour
     {
 	    if(Input.GetKeyDown(KeyCode.Escape)){
 	    	//menu
-	    }else if(Input.GetKeyDown(KeyCode.Alpha1)&&!dialogueBox.activeInHierarchy){
+	    }else if(Input.GetKeyDown(KeyCode.Alpha1)&&!dialogueBox.activeInHierarchy && currListeninginProgress == 0){
 	    	//menu
 	    	hackingBox.SetActive(!hackingBox.activeInHierarchy);
 	    	print("1");
-	    }else if(Input.GetKeyDown(KeyCode.Alpha2)&&!dialogueBox.activeInHierarchy){
+	    }else if(Input.GetKeyDown(KeyCode.Alpha2)&&!dialogueBox.activeInHierarchy&& currListeninginProgress == 0){
 	    	//menu
+	    	Camera.main.transform.position = waterCoolerCamPos;
+	    	startListeningIn();
 	    	print("2");
 	    }
-	    else if(Input.GetKeyDown(KeyCode.Alpha3) && !dialogueBox.activeInHierarchy){
+	    else if(Input.GetKeyDown(KeyCode.Alpha3) && !dialogueBox.activeInHierarchy&& currListeninginProgress == 0){
 	    	//menu
-	    	interogationBox.SetActive(!interogationBox.activeInHierarchy);
+	    	interogationBox.SetActive(!interogationBox.activeInHierarchy&& currListeninginProgress == 0);
+	    	Camera.main.transform.position = interogationCamPos;
 	    	print("3");
 	    }
 	    
-	    if(Input.GetMouseButtonDown(0) && dialogueBox.activeInHierarchy && currQuestTNode != null){
+	    if(Input.GetMouseButtonDown(0) && dialogueBox.activeInHierarchy && currQuestTNode != null&& currListeninginProgress == 0){
 	    	nextQuestClick();
 	    }
+	    if(Input.GetMouseButtonDown(0) && dialogueBox.activeInHierarchy  && currListeninginProgress != 0){
+	    	continueListeningIn();
+	    }
     }
+    
+	public void startListeningIn(){
+		GameManager.inst.actionsToday--;
+		
+		print("Hello: " );
+		
+		foreach(ListeningIn x in listeningIns){
+			if(x.name == "Day - " + (int)(GameManager.inst.day + 1)){
+				currListeningIn = x; 
+				break; 
+			}
+			
+			
+		}
+		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
+			if(x.GetComponent<NPCManager>().name == currListeningIn.list[currListeninginProgress].person){
+				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
+				x.transform.position = x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position;
+			}
+		}
+		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
+			if(x.GetComponent<NPCManager>().name == currListeningIn.list[currListeninginProgress+1].person){
+				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
+				x.transform.position = x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position;
+			}
+		}
+		
+		if(currListeninginProgress <= currListeningIn.list.Count){
+			dialogueBox.SetActive(true);
+			questText.text = currListeningIn.list[currListeninginProgress].text; 
+			charSpeaking.text = currListeningIn.list[currListeninginProgress].person; 
+			currListeninginProgress++;
+		}
+		
+		
+	}
+	public void continueListeningIn(){
+		
+		if(currListeninginProgress < currListeningIn.list.Count){
+			dialogueBox.SetActive(true);
+			questText.text = currListeningIn.list[currListeninginProgress].text; 
+			charSpeaking.text = currListeningIn.list[currListeninginProgress].person; 
+			currListeninginProgress++;
+		}else{
+			currListeninginProgress = 0; 
+			dialogueBox.SetActive(false);
+			Camera.main.transform.position = defaultCamPos; 
+		}
+	}
 	public void startHacking(string person){
 		GameManager.inst.actionsToday--;
 		
@@ -113,6 +176,13 @@ public class QuestManager : MonoBehaviour
 			
 			
 		}
+		
+		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
+			if(x.GetComponent<NPCManager>().name == person){
+				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
+				x.transform.position = x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position;
+			}
+		}
 		//find the charachter and move them to proper place;
 		if(currQuestTNode != null){
 			dialogueBox.SetActive(true); 
@@ -146,6 +216,7 @@ public class QuestManager : MonoBehaviour
 		
 		if(currQuestTNode.next == null && currQuestTNode.response1Next == null && currQuestTNode.response2Next == null){
 			dialogueBox.SetActive(false);
+			Camera.main.transform.position = defaultCamPos; 
 		}
 	}
 	public void nextQuestClick(bool response){

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b00e2c1e488205429a1a94a1060ce18, type: 3}
+  m_Name: Day - 2
+  m_EditorClassIdentifier: 
+  dayTriggered: 0
+  list:
+  - person: Blake Binder
+    text: Heya Hackley, how is it going training the newbie?
+  - person: Hackley Banks
+    text: Ugh, the kid is so annoying. I have been having to teach him basic stuff
+      like Bootstrap.
+  - person: Blake Binder
+    text: "What\u2019s a bootstrap?"
+  - person: Hackley Banks
+    text: Oh forget it you oaf.
+  - person: Blake Binder
+    text: " \u201COh real funny Hackley, you should really take it easy on the kid.
+      Anyways, fill out the survey!\u201D "
+  - person: Hackley Banks
+    text: "Oh I definitely won\u2019t."

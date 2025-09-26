@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b00e2c1e488205429a1a94a1060ce18, type: 3}
+  m_Name: Day - 3
+  m_EditorClassIdentifier: 
+  dayTriggered: 0
+  list:
+  - person: Justin Time
+    text: "\u201CHey, sir?\u201D"
+  - person: Blake Binder
+    text: "What\u2019s up, kiddo?"
+  - person: Justin Time
+    text: Has the boss and Sue always been this close?
+  - person: Blake Binder
+    text: "Why are you askin\u2019?"
+  - person: Justin Time
+    text: "You don\u2019t think the\u2019re\u2026"
+  - person: Blake Binder
+    text: Oh my, the youth these days, only got one thing on your mind, huh?
+  - person: Justin Time
+    text: "No no, it\u2019s not like that!"
+  - person: Justin Time
+    text: "Sorry, I\u2019ll just get back to work."

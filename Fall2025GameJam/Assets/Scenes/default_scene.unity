@@ -2988,7 +2988,7 @@ Transform:
   m_GameObject: {fileID: 555880866}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9205049, z: -0.3907311, w: 0}
-  m_LocalPosition: {x: 0, y: 32.5, z: 31}
+  m_LocalPosition: {x: -4.7, y: 15.1, z: 13.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6233,6 +6233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77366d8007a6634fb2948dc0407dec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultCamPos: {x: 0, y: 0, z: 0}
+  waterCoolerCamPos: {x: 0, y: 15.1, z: 10}
+  interogationCamPos: {x: -4.7, y: 15.1, z: 13.6}
   inInterrogation: 0
   listeningIn: 0
   currentHacking: {fileID: 0}
@@ -6312,6 +6315,12 @@ MonoBehaviour:
   hackingModal: {fileID: 1522528308}
   nameHacking: {fileID: 557631166}
   fileDetailHacking: {fileID: 1370605652}
+  listeningIns:
+  - {fileID: 11400000, guid: 1370a70fc2e2e3c419d7f0109c5f434b, type: 2}
+  - {fileID: 11400000, guid: 190346764ba08d1408ef39f4b58cfa14, type: 2}
+  - {fileID: 11400000, guid: a08dc466120f7294ea01945f223bb80f, type: 2}
+  - {fileID: 11400000, guid: 90446cba174116543884d4d590f05c56, type: 2}
+  - {fileID: 11400000, guid: 9bfc1c77ca4b5804ead210b56ca39205, type: 2}
 --- !u!4 &1541627902
 Transform:
   m_ObjectHideFlags: 0
