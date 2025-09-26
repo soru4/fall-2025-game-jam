@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc66d70926bc0314ea1dd3594ca1cc8a, type: 3}
+  m_Name: Blake Binder - Day 3
+  m_EditorClassIdentifier: 
+  dayTriggered: 0
+  files:
+  - fileName: "\u201Chackley-citation.txt\u201D"
+    fileContents: 
+  reference: {fileID: 7185005841625127972, guid: cb5b68f60ed183e468b5678404126490, type: 3}

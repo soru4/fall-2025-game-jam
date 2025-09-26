@@ -10,6 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc66d70926bc0314ea1dd3594ca1cc8a, type: 3}
-  m_Name: Hacking-JustinTim-Day1
+  m_Name: Blake Binder - Day 1
   m_EditorClassIdentifier: 
   dayTriggered: 0
+  files:
+  - fileName: justin-training.docx
+    fileContents: 
+  - fileName: 'hackley-raise-request.pdf '
+    fileContents: 
+  reference: {fileID: 7185005841625127972, guid: cb5b68f60ed183e468b5678404126490, type: 3}

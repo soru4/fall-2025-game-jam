@@ -6,9 +6,10 @@ public class Hacking : ScriptableObject
 	public int dayTriggered; 
 	
 	public List<Files> files; 
+	public GameObject reference; 
 	[System.Serializable]
 	public struct Files{
-		[SerializeReference] string fileName; 
-		[SerializeReference] string fileContents; 
+		public string fileName; 
+		public string fileContents; 
 	}
 }

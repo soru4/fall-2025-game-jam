@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc66d70926bc0314ea1dd3594ca1cc8a, type: 3}
+  m_Name: Bill Board - Day 3
+  m_EditorClassIdentifier: 
+  dayTriggered: 2
+  files:
+  - fileName: "\u201CAutomatedEmail.exe\u201D"
+    fileContents: 
+  - fileName: "\u201ClocalDemographics.ppt\u201D"
+    fileContents: 
+  reference: {fileID: 323514312437832398, guid: c7b54413c49b9d44aa6690ac0dabfc83, type: 3}

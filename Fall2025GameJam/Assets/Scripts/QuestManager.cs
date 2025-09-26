@@ -8,6 +8,7 @@ public class QuestManager : MonoBehaviour
 	public static QuestManager inst; 
 	public bool inInterrogation; 
 	public bool listeningIn; 
+	public Hacking currentHacking; 
 	public GameObject dialogueBox;
 	public GameObject interogationBox;
 	public GameObject hackingBox;
@@ -22,6 +23,13 @@ public class QuestManager : MonoBehaviour
 	public GameObject button1; 
 	public GameObject button2; 
 	public List<QuestTNode> startingNodes; 
+	
+	public List<Hacking> allHackings; 
+	
+	public GameObject hackingModal; 
+	public TextMeshProUGUI nameHacking; 
+	public TextMeshProUGUI fileDetailHacking; 
+	
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	// Awake is called when the script instance is being loaded.
 	
@@ -57,7 +65,41 @@ public class QuestManager : MonoBehaviour
 	    	nextQuestClick();
 	    }
     }
-    
+	public void startHacking(string person){
+		GameManager.inst.actionsToday--;
+		
+		print("Hello: " + person);
+		print("Searching for: " + person + " - Day " + (int)(GameManager.inst.day + 1));
+		foreach(Hacking x in allHackings){
+			if(x.name == person + " - Day " + (int)(GameManager.inst.day + 1)){
+				currentHacking = x; 
+				break; 
+			}
+			
+			
+		}
+		// first we need to go to hacking minigame. 
+		//sequence memorizaation things. 
+		// then open up a box with all the files. 
+		hackingModal.SetActive(true);
+		string finalFileDetail = "";
+		foreach(Hacking.Files x in currentHacking.files){
+			finalFileDetail += x.fileName + "\n" + x.fileContents + "\n"; 
+		}
+		nameHacking.text = person; 
+		fileDetailHacking.text = finalFileDetail; 
+		
+		hackingBox.SetActive(false);
+		
+		
+		
+		
+	}
+	
+	public void closeHackingModal(){
+		hackingModal.SetActive(false);
+		hackingBox.SetActive(false);
+	}
 	public void startQuest(string person){
 		GameManager.inst.actionsToday--;
 		
