@@ -41,6 +41,8 @@ public class QuestManager : MonoBehaviour
 	public GameObject gameTitle;
 	public GameObject listeningIn1; 
 	public GameObject listeningIn2; 
+	
+	public AudioSource blah; 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	// Awake is called when the script instance is being loaded.
 	
@@ -58,6 +60,12 @@ public class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
 	{
+		if(Time.time < 33 && Input.GetKey(KeyCode.Backspace)){
+			cutScene.SetActive(false); 
+			gameTitle.SetActive(true);
+			Time.timeScale = 20; 
+		}
+		
 		if(Time.time >=33 && Time.time < 40){
 			cutScene.SetActive(false); 
 			gameTitle.SetActive(true);
@@ -65,6 +73,7 @@ public class QuestManager : MonoBehaviour
 		}
 		else if(Time.time > 41 && Time.time < 42){
 			gameTitle.SetActive(false);
+			Time.timeScale = 1; 
 		}
 		else{
 		
@@ -114,7 +123,6 @@ public class QuestManager : MonoBehaviour
 				Vector3 temp = Random.insideUnitSphere*2; 
 				Vector3 t1 = new Vector3(temp.x, 0, temp.z); 
 				listeningIn2 = x; 
-				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
 				x.transform.position = x.GetComponent<NPCManager>().waterCoolerPos.transform.position + t1;
 			}
 		}
@@ -123,7 +131,6 @@ public class QuestManager : MonoBehaviour
 				Vector3 temp = Random.insideUnitSphere*2; 
 				Vector3 t1 = new Vector3(temp.x, 0, temp.z); 
 				listeningIn1 = x; 
-				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
 				x.transform.position = x.GetComponent<NPCManager>().waterCoolerPos.transform.position + t1;
 			}
 		}
@@ -204,7 +211,6 @@ public class QuestManager : MonoBehaviour
 		
 		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
 			if(x.GetComponent<NPCManager>().name == person){
-				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position);
 				x.transform.position = x.GetComponent<NPCManager>().ceoOfficeOutside.transform.position;
 			}
 		}
@@ -212,6 +218,7 @@ public class QuestManager : MonoBehaviour
 		if(currQuestTNode != null){
 			dialogueBox.SetActive(true); 
 			charSpeaking.text = person;
+			blah.PlayOneShot(currQuestTNode.currentDialogue.voiceLine);
 			setUpDialogueLayout();
 				
 		}
