@@ -36,6 +36,9 @@ public class QuestManager : MonoBehaviour
 	
 	public List<ListeningIn> listeningIns; 
 	public int currListeninginProgress; 
+	
+	public GameObject cutScene; 
+	public GameObject gameTitle;
 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	// Awake is called when the script instance is being loaded.
@@ -48,11 +51,22 @@ public class QuestManager : MonoBehaviour
     {
 	    defaultCamPos = new Vector3(0f,32.5f,31f);
 	    Camera.main.transform.position = defaultCamPos; 
+	    cutScene.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
-    {
+	{
+		if(Time.time >=33 && Time.time < 40){
+			cutScene.SetActive(false); 
+			gameTitle.SetActive(true);
+			
+		}
+		else if(Time.time > 41){
+			gameTitle.SetActive(false);
+		}
+		else{
+		
 	    if(Input.GetKeyDown(KeyCode.Escape)){
 	    	//menu
 	    }else if(Input.GetKeyDown(KeyCode.Alpha1)&&!dialogueBox.activeInHierarchy && currListeninginProgress == 0){
@@ -78,6 +92,7 @@ public class QuestManager : MonoBehaviour
 	    if(Input.GetMouseButtonDown(0) && dialogueBox.activeInHierarchy  && currListeninginProgress != 0){
 	    	continueListeningIn();
 	    }
+		}
     }
     
 	public void startListeningIn(){
