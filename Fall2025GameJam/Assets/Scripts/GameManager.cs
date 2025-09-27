@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using TMPro; 
+using UnityEngine.UI;
+using System.Collections.Generic;
 public class GameManager : MonoBehaviour
 {
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -13,7 +15,7 @@ public class GameManager : MonoBehaviour
 	public TextMeshProUGUI dayNumber; 
 
 	public QuestTNode currentTNode; 
-    
+	public List<Toggle> toggles; 
 	// Awake is called when the script instance is being loaded.
 	protected void Awake()
 	{
@@ -27,24 +29,26 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
 	{
-		dayNumber.text = "Day: " +day;
+		dayNumber.text = "Day: " +day +1;
 		dayName.text = day == 0 ? "Monday" : day == 1 ? "Tuesday" : day == 2? "Wednesday" : day == 3 ? "Thursday" : day == 4 ? "Friday" : "null";
 		
 		actionsLeft.text = actionsToday + " Actions Left";
-		if(actionsToday < (actionsPerDay[day]/2) + 1){
-			foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
-				x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().depart.transform.position);
-			}
-		}
+	
 		if(actionsToday <=0)
 	    	CheckHour();
     }
 	void CheckHour(){
 		day += 1;
-		actionsToday = actionsPerDay[day];
-		foreach(GameObject x in GameObject.FindGameObjectsWithTag("NPC")){
-			x.GetComponent<NPCPathfinding>().SetDestination(x.GetComponent<NPCManager>().cubiclePos.transform.position);
+		if(day == 5){
+			foreach(Toggle x in toggles){
+				if(x.isOn){
+					Cutscene.inst.PlayEndingCutscene(x.gameObject.name);
+					break;
+				}
+			}
 		}
+		actionsToday = actionsPerDay[day];
+	
 		
 		
 	}

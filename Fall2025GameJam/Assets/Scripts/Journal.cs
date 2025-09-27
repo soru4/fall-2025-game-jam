@@ -37,10 +37,6 @@ public class Journal : MonoBehaviour
 		personText.text = text;
 	}
 	
-	public void chooseToggle(string person){
-		// play cutscene
-		
-	}
 	
 	[System.Serializable]
 	public struct JournalEntry{
