@@ -46,6 +46,8 @@ public class QuestManager : MonoBehaviour
 	
 	public GameObject journalBox; 
 	
+	public GameObject menu; 
+	
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	// Awake is called when the script instance is being loaded.
 	
@@ -83,6 +85,7 @@ public class QuestManager : MonoBehaviour
 		
 	    if(Input.GetKeyDown(KeyCode.Escape)){
 	    	//menu
+	    	menu.SetActive(!menu.gameObject.activeInHierarchy);
 	    }else if(Input.GetKeyDown(KeyCode.Alpha1)&&!dialogueBox.activeInHierarchy && currListeninginProgress == 0){
 	    	//menu
 	    	hackingBox.SetActive(!hackingBox.activeInHierarchy);

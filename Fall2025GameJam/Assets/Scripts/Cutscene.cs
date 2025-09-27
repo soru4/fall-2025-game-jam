@@ -22,7 +22,7 @@ public class Cutscene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	    videoPlayer.playbackSpeed = 1; 
+	    //videoPlayer.playbackSpeed = 1; 
     }
     
 	public void PlayEndingCutscene( string person){
@@ -30,10 +30,14 @@ public class Cutscene : MonoBehaviour
 	}
 	
 	public void newsPaper(string person){
-		if(person != "Hackley"){
+		QuestManager.inst.cutScene.SetActive(true);
+		
+		if(person == "Hackley"){
 			videoPlayer.url = System.IO.Path.Combine (Application.streamingAssetsPath,"won_newspaper.mp4"); 
 		}else{
 			videoPlayer.url = System.IO.Path.Combine (Application.streamingAssetsPath,"lost_newspaper.mp4"); 
 		}
+		videoPlayer.Play();
+		videoPlayer.playbackSpeed = 0.5f;
 	}
 }
