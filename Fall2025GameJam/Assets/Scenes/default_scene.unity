@@ -1739,7 +1739,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use Actions (controls located at bottom) to FIND THE RAT and SAVE NEXUS!! '
+  m_text: "Use Actions (controls located at bottom) to FIND THE RAT and SAVE NEXUS!!
+    \n\nSee a record of all interactions and CHOOSE who you think the RAT is in the
+    JOURNAL TAB. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13127,34 +13129,34 @@ MonoBehaviour:
     Background Music
     - Ron Gelinas - Ascension [ROYALTY FREE MUSIC] - https://soundcloud.com/atmospheric-music-portal/ascension-ambient-chillout?in=atmospheric-music-portal/sets/corporate-retail-royalty-free&si=79723307f4e84e4cba7fbf6fbd0164da&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 
-    
+
 
     Background
     audio:
 
-    
+
 
     https://www.youtube.com/watch?v=HJ1lb8iZBFI
 
-    
 
-    
 
-    NPC
-    models:
 
-    Make Human Blender extension with plugins
 
-    
+    NPC models:
+
+    Make
+    Human Blender extension with plugins
+
+
 
     https://extensions.blender.org/add-ons/mpfb/
 
-    
+
 
     Clothes:
     https://static.makehumancommunity.org/assets/assetpacks.html
 
-    
+
 
 '
   m_isRightToLeft: 0
