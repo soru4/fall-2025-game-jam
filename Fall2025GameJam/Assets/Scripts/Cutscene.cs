@@ -6,14 +6,15 @@ public class Cutscene : MonoBehaviour
 	public VideoPlayer videoPlayer; 
     
     void Start()
-    {
-	    videoPlayer.url = System.IO.Path.Combine (Application.streamingAssetsPath,"0001-0796.mp4"); 
-	    videoPlayer.playbackSpeed = 1; 
+	{	if(Time.time < 20){
+		videoPlayer.url = System.IO.Path.Combine (Application.streamingAssetsPath,"0001-0796.mp4"); 
+	}
+	   
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+	    videoPlayer.playbackSpeed = 1; 
     }
 }

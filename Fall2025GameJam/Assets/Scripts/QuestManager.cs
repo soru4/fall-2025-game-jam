@@ -43,6 +43,9 @@ public class QuestManager : MonoBehaviour
 	public GameObject listeningIn2; 
 	
 	public AudioSource blah; 
+	
+	public GameObject journalBox; 
+	
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	// Awake is called when the script instance is being loaded.
 	
@@ -55,6 +58,7 @@ public class QuestManager : MonoBehaviour
 	    defaultCamPos = new Vector3(0f,32.5f,31f);
 	    Camera.main.transform.position = defaultCamPos; 
 	    cutScene.SetActive(true);
+	    journalBox.SetActive(false);
     }
 
     // Update is called once per frame
@@ -93,6 +97,12 @@ public class QuestManager : MonoBehaviour
 	    	//menu
 	    	interogationBox.SetActive(!interogationBox.activeInHierarchy&& currListeninginProgress == 0);
 	    	Camera.main.transform.position = interogationCamPos;
+	    	print("3");
+	    }
+	    else if(Input.GetKeyDown(KeyCode.Alpha4) && !dialogueBox.activeInHierarchy&& currListeninginProgress == 0){
+	    	//menu
+	    	journalBox.SetActive(!journalBox.activeInHierarchy);
+	    	
 	    	print("3");
 	    }
 	    
@@ -228,7 +238,8 @@ public class QuestManager : MonoBehaviour
 		
 				button1.SetActive(false);
 				button2.SetActive(false);
-				dialogueBox.SetActive(true); 
+			dialogueBox.SetActive(true); 
+		Journal.inst.addJournalEntry(charSpeaking.text, currQuestTNode.currentDialogue.text);
 				questText.text = currQuestTNode.currentDialogue.text; 
 				if(currQuestTNode.response1Next != null){
 					button1.SetActive(true);
