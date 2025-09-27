@@ -86,6 +86,7 @@ public class QuestManager : MonoBehaviour
 	    }else if(Input.GetKeyDown(KeyCode.Alpha1)&&!dialogueBox.activeInHierarchy && currListeninginProgress == 0){
 	    	//menu
 	    	hackingBox.SetActive(!hackingBox.activeInHierarchy);
+	    	HackingMiniGame.inst.startNewMinigame();
 	    	print("1");
 	    }else if(Input.GetKeyDown(KeyCode.Alpha2)&&!dialogueBox.activeInHierarchy&& currListeninginProgress == 0){
 	    	//menu
