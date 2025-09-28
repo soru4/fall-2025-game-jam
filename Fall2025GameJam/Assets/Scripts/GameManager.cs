@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour
 	public TextMeshProUGUI dayNumber; 
 
 	public QuestTNode currentTNode; 
-	public List<Toggle> toggles; 
+	public List<Toggle> toggles;
+	
+	public GameObject warnings; 
 	// Awake is called when the script instance is being loaded.
 	protected void Awake()
 	{
@@ -39,6 +41,9 @@ public class GameManager : MonoBehaviour
     }
 	void CheckHour(){
 		day += 1;
+		if(day>= 3){
+			warnings.SetActive(true);
+		}
 		if(day == 5){
 			foreach(Toggle x in toggles){
 				if(x.isOn){
